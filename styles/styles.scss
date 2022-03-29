@@ -2,13 +2,20 @@
 //colors
 $primary-violet: hsl(257, 40%, 49%);
 $primary-soft-magenta: hsl(300, 69%, 71%);
+
 // typeface
 $font-family-primary: "Poppins", sans-serif;
 $font-family-secondary: "Open Sans", sans-serif;
+$size-x-large: 2.5rem;
 $size-large: 1.5rem;
+$size-medium: 1.125rem;
 $size-small: 0.75rem;
 $weight-normal: 400;
 $weight-bold: 600;
+
+// breakpoints for different screen sizes
+$layout-breakpoint-medium: 60rem; //960px
+$layout-breakpoint-large: 75rem; // 1200px
 
 /*
   Josh's Custom CSS Reset
@@ -60,7 +67,7 @@ h6 {
 
 // layout styles
 body {
-	height: 100vh;
+	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -138,4 +145,34 @@ body {
 .attribution {
 	font-size: 11px;
 	text-align: center;
+}
+
+@media only screen and (min-width: $layout-breakpoint-medium) {
+	body {
+		padding: 5rem;
+		background-image: url(/images/bg-desktop.svg);
+	}
+	.header-logo {
+		height: 2.8rem;
+	}
+	.main {
+		flex-direction: row;
+		padding-top: 2.5rem;
+	}
+	.text {
+		margin-left: 3.75rem;
+		text-align: left;
+		flex-basis: 42%;
+
+		&-title {
+			font-size: $size-x-large;
+		}
+
+		&-content {
+			font-size: $size-medium;
+		}
+	}
+	.footer-socials {
+		text-align: right;
+	}
 }
