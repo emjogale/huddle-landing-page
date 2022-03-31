@@ -146,6 +146,10 @@ body {
 .attribution {
 	font-size: 11px;
 	text-align: center;
+
+	& a {
+		color: white;
+	}
 }
 
 @media only screen and (min-width: $layout-breakpoint-medium) {
