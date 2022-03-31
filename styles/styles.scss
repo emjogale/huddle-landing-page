@@ -154,15 +154,15 @@ body {
 
 @media only screen and (min-width: $layout-breakpoint-medium) {
 	body {
-		padding: 5rem;
+		padding: 4.5rem;
 		background-image: url(/images/bg-desktop.svg);
 	}
 	.header-logo {
-		height: 2.8rem;
+		height: 3rem;
 	}
 	.main {
 		flex-direction: row;
-		padding-top: 2.5rem;
+		padding-top: 3rem;
 	}
 	.text {
 		margin-left: 3.75rem;
@@ -175,6 +175,13 @@ body {
 
 		&-content {
 			font-size: $size-medium;
+		}
+
+		&-button {
+			padding: 1rem 4.7rem;
+			font-size: 1rem;
+			border-radius: 2rem;
+			box-shadow: 0px 4px 4px 0px hsla(0, 0%, 0%, 0.25);
 		}
 	}
 	.footer-socials {
