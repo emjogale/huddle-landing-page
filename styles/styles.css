@@ -108,15 +108,22 @@ body {
   padding: 1rem 0 1.5rem 0;
 }
 
-.text-button {
+.text-register {
+  display: block;
+  width: 12.5rem;
+  background-color: white;
+  margin: 0 auto;
+  text-decoration: none;
   padding: 0.7rem 4.7rem;
   border-radius: 1.5rem;
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
   border: none;
   color: #674baf;
   font-size: 0.75rem;
 }
 
-.text-button:hover {
+.text-register:hover {
   background-color: #e882e8;
   color: white;
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -124,27 +131,43 @@ body {
 }
 
 .footer-socials {
-  padding: 0 2rem 2rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   list-style-type: none;
+  padding: 0 4rem 1rem 4rem;
 }
 
 .footer-socials li {
-  width: 2rem;
   display: inline-block;
 }
 
 .footer-socials a {
   color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  text-decoration: none;
 }
 
-.footer-socials .fa-stack {
-  font-size: 0.75rem;
+.footer-socials a:hover {
+  color: #e882e8;
+  border-color: #e882e8;
 }
 
 .attribution {
@@ -183,12 +206,13 @@ body {
   .text-content {
     font-size: 1.125rem;
   }
-  .text-button {
+  .text-register {
     padding: 1rem 4.7rem;
     font-size: 1rem;
     border-radius: 2rem;
-    -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 0;
+    -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
   }
   .footer-socials {
     -webkit-box-pack: end;
@@ -196,16 +220,6 @@ body {
             justify-content: end;
     gap: 1rem;
     padding-right: 1rem;
-  }
-  .footer-socials li {
-    width: 3rem;
-    padding-left: 0.75rem;
-  }
-  .footer-socials .icon:hover {
-    color: #e882e8;
-  }
-  .footer-socials .fa-stack {
-    font-size: 1.125rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */
